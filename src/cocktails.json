@@ -1,0 +1,37 @@
+[{
+  "id": 1,
+  "name": "Beetroot & Anise",
+  "imgurl":"/static/beetroot-anise.jpeg",
+  "price": 5
+},
+{
+  "id": 2,
+  "name": "Cranberry & Pink Pepper",
+  "imgurl":"/static/cranberry-pinkpepper.jpg",
+  "price": 5
+},{
+  "id": 3,
+  "name": "Yasmine Iced Tea",
+  "imgurl":"/static/yasmine-icedtea.jpg",
+  "price": 5
+},{
+  "id": 4,
+  "name": "Elderflower & Basil",
+  "imgurl":"/static/elderflower-basil.jpg",
+  "price": 5
+},{
+  "id": 5,
+  "name": "Avocado & Matcha",
+  "imgurl":"/static/avocado-matcha.jpg",
+  "price": 5
+},{
+  "id": 6,
+  "name": "Grapefruit & Rosemary",
+  "imgurl":"/static/grapefruit-rosemary.jpg",
+  "price": 5
+},{
+  "id": 7,
+  "name": "Red Basil & Grapefruit",
+  "imgurl":"/static/redbasil-grapefruit.jpg",
+  "price": 5
+}]
