@@ -7,11 +7,11 @@
             </div>
             <img :src="cocktail.imgurl" class="section media">
             <div class="section">
-              <button class="tertiary orderbutton">Order</button>
+              <button class="tertiary orderbutton" @click="orderCocktail(cocktail)">Order</button>
             </div>
           </div>
         </section>
-        <section class="row">
+        <section v-if="orders && orders.length" class="row">
           <div class="col-sm-4 col-sm-offset-4">
             <div class="card fluid">
               <ul class="orders">
@@ -46,6 +46,13 @@ export default {
       cocktails: cocktails,
       orders: []
     };
+  },
+  methods: {
+    orderCocktail: function(cocktail){
+      let index = this.orders.findIndex(o => o.cocktail === cocktail);
+      if(index < 0) { this.orders.push({cocktail: cocktail, amount: 1}); }
+      else {this.orders[index].amount += 1; }
+    }
   }
 };
 </script>
