@@ -29,7 +29,7 @@
                 </li>
 
               </ul>
-              <button class="tertiary orderbutton">Finish Orders</button>
+              <button class="tertiary orderbutton" @click="finishOrders">Finish Orders</button>
             </div>
           </div>
         </section>
@@ -62,6 +62,11 @@ export default {
         let index = this.orders.indexOf(order);
         this.orders.splice(index, 1);
       }
+    },
+    finishOrders: function(){
+      console.log('Processing orders now...', this.orders);
+      console.log('Reset orders to empty array...');
+      this.orders = [];
     }
   }
 };
