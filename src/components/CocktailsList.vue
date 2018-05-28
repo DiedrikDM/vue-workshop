@@ -21,9 +21,10 @@ export default {
       cocktails: cocktails
     }
   },
+  props: ['ordersStore'],
   methods: {
     orderCocktail: function(cocktail){
-      this.$emit('cocktailOrdered', cocktail);
+      this.ordersStore.orderCocktail(cocktail);
     }
   }
 
