@@ -17,6 +17,7 @@
 }
 h1.header{
   float: left;
+  color: #f5f5f5;
 }
 ul.orders{
   list-style-type: none;
